@@ -7,7 +7,7 @@ C++ • Verilog • MATLAB/Simulink • Communications • InfoSec
 I work at the intersection of digital signal processing, FPGA design and engineering software development.
 
 My core stack includes **C++**, **Verilog**, **MATLAB** and **Simulink**.  
-My professional focus includes communication systems, telemetry, FPGA-based implementations, signal processing pipelines and secure engineering solutions.
+My professional focus includes communication systems, telemetry, FPGA-based implementations, signal processing pipelines, circuit design and secure engineering solutions.
 
 ## Focus Areas
 - Digital signal processing
@@ -37,5 +37,11 @@ This profile contains engineering prototypes, experiments and software related t
 - communication systems
 - instrumentation and backend tools
 
+## Featured Projects
+- [`pcm`](https://github.com/lay007/pcm) — Qt/C++ application for PCM data visualization and signal processing experiments
+- [`cpp_test`](https://github.com/lay007/cpp_test) — C++/CMake project template with tests, external dependencies and structured build setup
+- [`lay007.github.io`](https://github.com/lay007/lay007.github.io) — Personal engineering portfolio and landing page
+
 ## Contact
+- GitHub Pages: [lay007.github.io](https://lay007.github.io/)
 - Telegram: [@laymob](https://t.me/laymob)
