@@ -52,8 +52,8 @@ Hardware-assisted network performance testing system with FPGA-based timestampin
 ### [script-toolbox](https://github.com/Lay007/script-toolbox)
 Practical PowerShell toolkit for Windows setup, SSH access, Git onboarding, and repeatable developer environment preparation.
 
-### [pcm](https://github.com/Lay007/pcm)
-Qt/C++ application for PCM data visualization and signal processing experiments.
+### [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase)
+C++-focused DSP showcase repository for signal-processing examples, experiments, and compact implementation ideas.
 
 ### [lay007.github.io](https://github.com/Lay007/lay007.github.io)
 Personal engineering website and portfolio.
