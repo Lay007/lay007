@@ -11,14 +11,27 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 ## Engineering Pipeline
 
 ```mermaid
-flowchart LR
-    A[Signal / RF Problem] --> B[MATLAB / Simulink Model]
-    B --> C[C++ Reference Implementation]
-    C --> D[Fixed-Point Model]
-    D --> E[Verilog / FPGA Architecture]
-    E --> F[Measurement and Verification]
-    F --> G[BER / EVM / SNR / Reports]
+flowchart TB
+    A["1. Signal / RF Problem"]
+    B["2. MATLAB / Simulink Reference Model"]
+    C["3. C++ Implementation"]
+    D["4. Fixed-Point Design"]
+    E["5. Verilog / FPGA Architecture"]
+    F["6. Measurement and Verification"]
+    G["7. BER / EVM / SNR Reports"]
+
+    A --> B --> C --> D --> E --> F --> G
 ```
+
+| Stage | Engineering result |
+|---|---|
+| **Signal / RF problem** | define channel, impairments, constraints, and measurable goals |
+| **MATLAB / Simulink model** | build readable golden reference and diagnostic plots |
+| **C++ implementation** | create deterministic, testable, reproducible software processing |
+| **Fixed-point design** | define Q-format, rounding, saturation, and error budget |
+| **Verilog / FPGA architecture** | map stable DSP blocks to streaming RTL and testbenches |
+| **Measurement and verification** | compare model, software, RTL, and real/synthetic signals |
+| **BER / EVM / SNR reports** | turn experiments into engineering conclusions and publication-ready artifacts |
 
 ---
 
