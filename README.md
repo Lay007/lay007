@@ -10,18 +10,7 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 
 ## Engineering Pipeline
 
-```mermaid
-flowchart TB
-    A["1. Signal / RF Problem"]
-    B["2. MATLAB / Simulink Reference Model"]
-    C["3. C++ Implementation"]
-    D["4. Fixed-Point Design"]
-    E["5. Verilog / FPGA Architecture"]
-    F["6. Measurement and Verification"]
-    G["7. BER / EVM / SNR Reports"]
-
-    A --> B --> C --> D --> E --> F --> G
-```
+![Engineering Pipeline](assets/engineering_pipeline.svg)
 
 | Stage | Engineering result |
 |---|---|
