@@ -22,6 +22,8 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 | **Measurement and verification** | compare model, software, RTL, and real/synthetic signals |
 | **BER / EVM / SNR reports** | turn experiments into engineering conclusions and publication-ready artifacts |
 
+Additional portfolio structure notes are available in [docs/engineering-portfolio-map.md](docs/engineering-portfolio-map.md).
+
 ---
 
 ## What I Do Best
