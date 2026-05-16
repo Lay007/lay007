@@ -26,6 +26,18 @@ Additional portfolio structure notes are available in [docs/engineering-portfoli
 
 ---
 
+## Engineering Proof
+
+| Proof artifact | Repository | What it demonstrates |
+|---|---|---|
+| Experiment manifests + CI checks | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | reproducible SDR labs and acceptance criteria |
+| DSP test-vector strategy + benchmark schema | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | deterministic C++ DSP validation and performance reporting |
+| SLA dashboard + timestamp comparison manifest | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | measurement credibility and hardware/software timestamp analysis |
+| CDC comparison flow + paper outline | [optical-demodulator](https://github.com/Lay007/optical-demodulator) | IEEE-style optical DSP research workflow |
+| MkDocs course site + generated figures | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | documentation automation and course UX |
+
+---
+
 ## What I Do Best
 
 - Design DSP chains for communication and measurement systems.
@@ -41,22 +53,22 @@ Additional portfolio structure notes are available in [docs/engineering-portfoli
 ### [optical-demodulator](https://github.com/Lay007/optical-demodulator)
 Research-oriented coherent optical demodulation workspace with MATLAB, C++, and Verilog layers.
 
-**Focus:** chromatic-dispersion compensation, DP-QPSK processing, real-signal verification, BER/EVM/SNR metrics, fixed-point and RTL mapping.
+**Focus:** chromatic-dispersion compensation, DP-QPSK processing, CDC comparison reports, BER/EVM/SNR metrics, fixed-point and RTL mapping.
 
 ### [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course)
 Bilingual SDR course connecting signal theory, DSP, fixed-point modeling, HDL flow, RF front-end understanding, and board-level experiments.
 
-**Focus:** Zynq-7020, AD9363, RTL-SDR, HDSDR, MATLAB/Simulink, Verilog, reproducible IEEE-style plots.
+**Focus:** Zynq-7020, AD9363, RTL-SDR, HDSDR, experiment manifests, CI-checked assets, reproducible IEEE-style plots.
 
 ### [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase)
 Modern C++ DSP showcase with deterministic kernels, tests, benchmark tooling, CI, and generated engineering plots.
 
-**Focus:** FIR filtering, FFT overlap-save, Goertzel detector, GCC-PHAT delay estimation, rational resampling, AVX2-oriented optimization.
+**Focus:** FIR filtering, FFT overlap-save, Goertzel detector, GCC-PHAT delay estimation, rational resampling, golden vectors, benchmark methodology.
 
 ### [network-quality-assessment](https://github.com/Lay007/network-quality-assessment)
 Hardware-assisted network measurement concept based on FPGA/SFP datapath timestamping and SLA-oriented metrics.
 
-**Focus:** one-way delay, jitter, packet loss, timestamp accuracy, timing error budget, root-cause analysis, RFC 2544 / ITU-T Y.1564 methodology.
+**Focus:** one-way delay, jitter, packet loss, timestamp accuracy, timing error budget, SLA reports, software vs hardware timestamps.
 
 ### [script-toolbox](https://github.com/Lay007/script-toolbox)
 Practical automation toolbox for repeatable Windows engineering workstation setup.
@@ -65,6 +77,16 @@ Practical automation toolbox for repeatable Windows engineering workstation setu
 
 ### [lay007.github.io](https://github.com/Lay007/lay007.github.io)
 Personal engineering website and portfolio landing page.
+
+---
+
+## Currently Building
+
+- reproducible SDR course with hardware labs and manifest-driven experiments;
+- C++ DSP benchmark and verification framework;
+- optical coherent receiver research platform for CDC and BER/EVM/SNR studies;
+- hardware-assisted network measurement methodology with SLA reports;
+- portfolio site that connects these repositories into one engineering story.
 
 ---
 
