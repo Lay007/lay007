@@ -34,8 +34,12 @@
       .footerStrong{font:800 16px Arial,DejaVu Sans,sans-serif;fill:#f4fcff}
       .footer{font:400 16px Arial,DejaVu Sans,sans-serif;fill:#c7e6f2}
       .grid{stroke:#70cfff;stroke-opacity:.10;stroke-width:1}
-      .accent{stroke:#86e6ff;stroke-width:3;stroke-linecap:round}
-      .accent2{stroke:#b59cff;stroke-width:3;stroke-linecap:round}
+      .mini{stroke:#86e6ff;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .mini2{stroke:#b59cff;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .dot{fill:#86e6ff}
+      .dot2{fill:#b59cff}
+      .qtxt{font:800 16px Arial,DejaVu Sans,sans-serif;fill:#b59cff;text-anchor:middle;dominant-baseline:middle}
+      .code{font:800 21px Arial,DejaVu Sans,sans-serif;fill:#86e6ff;text-anchor:middle;dominant-baseline:middle}
     </style>
   </defs>
 
@@ -53,7 +57,7 @@
     <g>
       <rect class="card" width="240" height="92" rx="18"/>
       <rect class="chip" x="18" y="18" width="34" height="26" rx="13"/><text class="num" x="35" y="31">01</text>
-      <path class="accent" d="M74 28 H162"/>
+      <path class="mini" d="M174 30 C183 17 192 43 201 30 S219 17 228 30"/>
       <text x="120" y="58" class="stage">Signal / RF</text>
       <text x="120" y="80" class="hint">problem definition</text>
     </g>
@@ -61,7 +65,7 @@
     <g transform="translate(272 0)">
       <rect class="card" width="240" height="92" rx="18"/>
       <rect class="chip" x="18" y="18" width="34" height="26" rx="13"/><text class="num" x="35" y="31">02</text>
-      <path class="accent2" d="M74 28 H162"/>
+      <path class="mini" d="M176 39H228M176 39V17"/><path class="mini2" d="M181 34 L193 27 L205 31 L217 21 L228 18"/>
       <text x="120" y="58" class="stage">MATLAB</text>
       <text x="120" y="80" class="hint">golden reference</text>
     </g>
@@ -69,7 +73,8 @@
     <g transform="translate(544 0)">
       <rect class="card" width="240" height="92" rx="18"/>
       <rect class="chip" x="18" y="18" width="34" height="26" rx="13"/><text class="num" x="35" y="31">03</text>
-      <path class="accent" d="M74 28 H162"/>
+      <text class="code" x="202" y="29">{ }</text>
+      <circle class="mini" cx="226" cy="29" r="9"/>
       <text x="120" y="58" class="stage">C++ DSP</text>
       <text x="120" y="80" class="hint">tests and benchmarks</text>
     </g>
@@ -77,7 +82,9 @@
     <g transform="translate(816 0)">
       <rect class="card" width="240" height="92" rx="18"/>
       <rect class="chip" x="18" y="18" width="34" height="26" rx="13"/><text class="num" x="35" y="31">04</text>
-      <path class="accent2" d="M74 28 H162"/>
+      <circle class="mini2" cx="200" cy="29" r="15"/>
+      <text class="qtxt" x="200" y="29">Q</text>
+      <path class="mini" d="M220 20V38"/>
       <text x="120" y="58" class="stage">Fixed-point</text>
       <text x="120" y="80" class="hint">error budget</text>
     </g>
@@ -93,7 +100,8 @@
     <g>
       <rect class="card" width="240" height="92" rx="18"/>
       <rect class="chip" x="18" y="18" width="34" height="26" rx="13"/><text class="num" x="35" y="31">05</text>
-      <path class="accent" d="M74 28 H162"/>
+      <rect x="184" y="17" width="32" height="26" rx="5" fill="#12395a" stroke="#86e6ff" stroke-width="2"/>
+      <path class="mini" d="M176 22H184M176 30H184M176 38H184M216 22H224M216 30H224M216 38H224"/>
       <text x="120" y="58" class="stage">Verilog / FPGA</text>
       <text x="120" y="80" class="hint">streaming RTL</text>
     </g>
@@ -101,7 +109,8 @@
     <g transform="translate(272 0)">
       <rect class="card" width="240" height="92" rx="18"/>
       <rect class="chip" x="18" y="18" width="34" height="26" rx="13"/><text class="num" x="35" y="31">06</text>
-      <path class="accent2" d="M74 28 H162"/>
+      <rect x="176" y="16" width="54" height="32" rx="5" fill="#12395a" stroke="#86e6ff" stroke-width="2"/>
+      <path class="mini2" d="M181 35 C190 18 199 48 208 35 S225 18 230 35"/>
       <text x="120" y="58" class="stage">Verification</text>
       <text x="120" y="80" class="hint">model / C++ / RTL</text>
     </g>
@@ -109,7 +118,9 @@
     <g transform="translate(544 0)">
       <rect class="final" width="240" height="92" rx="18"/>
       <rect class="chip" x="18" y="18" width="34" height="26" rx="13"/><text class="num" x="35" y="31">07</text>
-      <path class="accent" d="M74 28 H162"/>
+      <path class="mini" d="M176 32H229M202 14V49"/>
+      <circle class="dot" cx="188" cy="23" r="3.5"/><circle class="dot" cx="216" cy="23" r="3.5"/>
+      <circle class="dot2" cx="188" cy="41" r="3.5"/><circle class="dot2" cx="216" cy="41" r="3.5"/>
       <text x="120" y="58" class="stage">Metrics</text>
       <text x="120" y="80" class="hint">BER / EVM / SNR</text>
     </g>
