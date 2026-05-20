@@ -33,7 +33,6 @@
       .stage{font:800 22px Arial,DejaVu Sans,sans-serif;fill:#f4fcff;text-anchor:middle;dominant-baseline:middle}
       .hint{font:400 14px Arial,DejaVu Sans,sans-serif;fill:#c9e4f0;text-anchor:middle}
       .arrow{stroke:#86e6ff;stroke-width:3;stroke-linecap:round;marker-end:url(#arrow)}
-      .route{stroke:#86e6ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none;marker-end:url(#arrow)}
       .footerStrong{font:800 16px Arial,DejaVu Sans,sans-serif;fill:#f4fcff}
       .footer{font:400 16px Arial,DejaVu Sans,sans-serif;fill:#c7e6f2}
       .grid{stroke:#70cfff;stroke-opacity:.10;stroke-width:1}
@@ -99,8 +98,6 @@
     <path class="arrow" d="M518 43 H534"/>
     <path class="arrow" d="M790 43 H806"/>
   </g>
-
-  <path class="route" d="M1128 188 H1148 V335 H456"/>
 
   <g transform="translate(208 292)">
     <g>
