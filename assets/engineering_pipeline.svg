@@ -1,144 +1,151 @@
-<svg width="1200" height="920" viewBox="0 0 1200 920" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1200" height="1040" viewBox="0 0 1200 1040" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Engineering pipeline from signal model to verified metrics</title>
-  <desc id="desc">Readable portfolio diagram showing the engineering chain: Signal/RF problem, MATLAB model, C++ DSP, fixed-point design, Verilog/FPGA, measurement, and BER/EVM/SNR reporting.</desc>
+  <desc id="desc">Readable portfolio diagram showing the engineering chain from signal problem to model, C++ implementation, fixed-point design, FPGA architecture, measurement and BER/EVM/SNR reporting.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="920" gradientUnits="userSpaceOnUse">
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="1040" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#071426"/>
       <stop offset="0.55" stop-color="#0a1f38"/>
       <stop offset="1" stop-color="#12365b"/>
     </linearGradient>
-    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 150) rotate(35) scale(520 330)">
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(190 160) rotate(35) scale(520 330)">
       <stop stop-color="#1bb6ff" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#1bb6ff" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 760) rotate(-25) scale(520 320)">
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 780) rotate(-25) scale(560 360)">
       <stop stop-color="#7c5cff" stop-opacity="0.25"/>
       <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
     </radialGradient>
-    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
-      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.32"/>
+    <filter id="shadow" x="-8%" y="-16%" width="116%" height="138%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.30"/>
     </filter>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
       <path d="M2 2 L10 6 L2 10 Z" fill="#86e6ff"/>
     </marker>
     <style>
-      .title{font:800 46px Arial, DejaVu Sans, sans-serif;fill:#f1fbff;letter-spacing:.2px}
-      .subtitle{font:400 22px Arial, DejaVu Sans, sans-serif;fill:#b9e7f7}
-      .card{fill:#0e2946;stroke:#67d8ff;stroke-width:2.4;filter:url(#shadow)}
-      .cardAlt{fill:#14284d;stroke:#b09aff;stroke-width:2.4;filter:url(#shadow)}
-      .numCircle{fill:#1a6f98;stroke:#85e6ff;stroke-opacity:.8;stroke-width:1.5}
-      .num{font:800 18px Arial, DejaVu Sans, sans-serif;fill:#f5fdff;text-anchor:middle;dominant-baseline:middle}
-      .stage{font:800 25px Arial, DejaVu Sans, sans-serif;fill:#f4fcff}
-      .body{font:400 18px Arial, DejaVu Sans, sans-serif;fill:#c9e4f0}
-      .metric{font:700 17px Arial, DejaVu Sans, sans-serif;fill:#98edff}
+      .title{font:800 44px Arial, DejaVu Sans, sans-serif;fill:#f1fbff;letter-spacing:.2px}
+      .subtitle{font:400 21px Arial, DejaVu Sans, sans-serif;fill:#b9e7f7}
+      .card{fill:#0e2946;stroke:#67d8ff;stroke-width:2.3;filter:url(#shadow)}
+      .cardAlt{fill:#14284d;stroke:#b09aff;stroke-width:2.3;filter:url(#shadow)}
+      .numCircle{fill:#1a6f98;stroke:#85e6ff;stroke-opacity:.85;stroke-width:1.5}
+      .num{font:800 17px Arial, DejaVu Sans, sans-serif;fill:#f5fdff;text-anchor:middle;dominant-baseline:middle}
+      .stage{font:800 23px Arial, DejaVu Sans, sans-serif;fill:#f4fcff}
+      .body{font:400 17px Arial, DejaVu Sans, sans-serif;fill:#c9e4f0}
+      .metric{font:700 16px Arial, DejaVu Sans, sans-serif;fill:#98edff}
       .line{stroke:#86e6ff;stroke-width:4;stroke-linecap:round;marker-end:url(#arrow)}
-      .feedback{stroke:#b59cff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+      .feedback{stroke:#b59cff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
       .small{font:400 17px Arial, DejaVu Sans, sans-serif;fill:#d3caff}
-      .footerStrong{font:800 21px Arial, DejaVu Sans, sans-serif;fill:#f4fcff}
-      .footer{font:400 21px Arial, DejaVu Sans, sans-serif;fill:#c7e6f2}
-      .grid{stroke:#70cfff;stroke-opacity:.16;stroke-width:1}
-      .icon{stroke:#85e6ff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;fill:none}
-      .icon2{stroke:#b59cff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .footerStrong{font:800 20px Arial, DejaVu Sans, sans-serif;fill:#f4fcff}
+      .footer{font:400 20px Arial, DejaVu Sans, sans-serif;fill:#c7e6f2}
+      .grid{stroke:#70cfff;stroke-opacity:.15;stroke-width:1}
+      .icon{stroke:#85e6ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .icon2{stroke:#b59cff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
     </style>
   </defs>
 
-  <rect width="1200" height="920" rx="0" fill="url(#bg)"/>
-  <rect width="1200" height="920" fill="url(#glowA)"/>
-  <rect width="1200" height="920" fill="url(#glowB)"/>
+  <rect width="1200" height="1040" fill="url(#bg)"/>
+  <rect width="1200" height="1040" fill="url(#glowA)"/>
+  <rect width="1200" height="1040" fill="url(#glowB)"/>
 
-  <g opacity="1">
-    <path class="grid" d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200M0 640H1200M0 720H1200M0 800H1200M0 880H1200"/>
-    <path class="grid" d="M80 0V920M160 0V920M240 0V920M320 0V920M400 0V920M480 0V920M560 0V920M640 0V920M720 0V920M800 0V920M880 0V920M960 0V920M1040 0V920M1120 0V920"/>
+  <g>
+    <path class="grid" d="M0 80H1200M0 160H1200M0 240H1200M0 320H1200M0 400H1200M0 480H1200M0 560H1200M0 640H1200M0 720H1200M0 800H1200M0 880H1200M0 960H1200"/>
+    <path class="grid" d="M80 0V1040M160 0V1040M240 0V1040M320 0V1040M400 0V1040M480 0V1040M560 0V1040M640 0V1040M720 0V1040M800 0V1040M880 0V1040M960 0V1040M1040 0V1040M1120 0V1040"/>
   </g>
 
-  <rect x="28" y="28" width="1144" height="864" rx="28" stroke="#67d8ff" stroke-opacity="0.28" stroke-width="2"/>
+  <rect x="28" y="28" width="1144" height="984" rx="28" stroke="#67d8ff" stroke-opacity="0.30" stroke-width="2"/>
   <text x="70" y="92" class="title">Engineering Pipeline</text>
-  <text x="72" y="130" class="subtitle">signal model → software → fixed-point → FPGA → measurement → publication-ready metrics</text>
+  <text x="72" y="130" class="subtitle">signal model → software → fixed-point → FPGA → measurement → metrics</text>
 
-  <g transform="translate(72 185)">
+  <g transform="translate(72 180)">
     <g transform="translate(0 0)">
-      <rect class="card" width="456" height="118" rx="22"/>
-      <circle class="numCircle" cx="48" cy="40" r="24"/><text class="num" x="48" y="40">01</text>
-      <path class="icon" d="M92 46 C111 16 128 76 147 46 S184 16 204 46"/>
-      <text x="238" y="42" class="stage">Signal / RF problem</text>
-      <text x="238" y="75" class="body">channel, impairments, constraints</text>
-      <text x="238" y="101" class="metric">Output: measurable requirements</text>
+      <rect class="card" width="468" height="132" rx="22"/>
+      <circle class="numCircle" cx="48" cy="43" r="24"/><text class="num" x="48" y="43">01</text>
+      <path class="icon" d="M92 52 C111 22 128 82 147 52 S184 22 204 52"/>
+      <text x="224" y="43" class="stage">Signal / RF</text>
+      <text x="224" y="75" class="body">channel and impairments</text>
+      <text x="224" y="101" class="body">constraints and goals</text>
+      <text x="224" y="123" class="metric">output: measurable requirements</text>
     </g>
 
-    <g transform="translate(600 0)">
-      <rect class="card" width="456" height="118" rx="22"/>
-      <circle class="numCircle" cx="48" cy="40" r="24"/><text class="num" x="48" y="40">02</text>
-      <path class="icon" d="M92 77H202M92 77V28"/><path class="icon2" d="M100 68 L125 54 L151 61 L176 39 L202 31"/>
-      <text x="238" y="42" class="stage">MATLAB / Simulink model</text>
-      <text x="238" y="75" class="body">golden reference and diagnostics</text>
-      <text x="238" y="101" class="metric">Output: plots and test vectors</text>
+    <g transform="translate(590 0)">
+      <rect class="card" width="468" height="132" rx="22"/>
+      <circle class="numCircle" cx="48" cy="43" r="24"/><text class="num" x="48" y="43">02</text>
+      <path class="icon" d="M92 84H202M92 84V32"/><path class="icon2" d="M100 75 L125 61 L151 68 L176 46 L202 38"/>
+      <text x="224" y="43" class="stage">MATLAB model</text>
+      <text x="224" y="75" class="body">golden reference</text>
+      <text x="224" y="101" class="body">diagnostics and plots</text>
+      <text x="224" y="123" class="metric">output: test vectors</text>
     </g>
 
-    <path class="line" d="M470 59 H585"/>
-    <path class="line" d="M828 130 V170"/>
+    <path class="line" d="M482 66 H575"/>
+    <path class="line" d="M824 146 V184"/>
 
-    <g transform="translate(600 188)">
-      <rect class="card" width="456" height="118" rx="22"/>
-      <circle class="numCircle" cx="48" cy="40" r="24"/><text class="num" x="48" y="40">03</text>
-      <text x="92" y="64" style="font:800 48px Arial,DejaVu Sans,sans-serif;fill:#85e6ff">{ }</text>
-      <circle class="icon" cx="178" cy="58" r="18"/>
-      <text x="238" y="42" class="stage">C++ DSP implementation</text>
-      <text x="238" y="75" class="body">deterministic kernels, tests, CLI</text>
-      <text x="238" y="101" class="metric">Output: reproducible software core</text>
+    <g transform="translate(590 205)">
+      <rect class="card" width="468" height="132" rx="22"/>
+      <circle class="numCircle" cx="48" cy="43" r="24"/><text class="num" x="48" y="43">03</text>
+      <text x="96" y="73" style="font:800 45px Arial,DejaVu Sans,sans-serif;fill:#85e6ff">{ }</text>
+      <circle class="icon" cx="178" cy="64" r="18"/>
+      <text x="224" y="43" class="stage">C++ DSP</text>
+      <text x="224" y="75" class="body">deterministic kernels</text>
+      <text x="224" y="101" class="body">tests, CLI, benchmarks</text>
+      <text x="224" y="123" class="metric">output: software core</text>
     </g>
 
-    <path class="line" d="M585 247 H470"/>
+    <path class="line" d="M575 271 H482"/>
 
-    <g transform="translate(0 188)">
-      <rect class="card" width="456" height="118" rx="22"/>
-      <circle class="numCircle" cx="48" cy="40" r="24"/><text class="num" x="48" y="40">04</text>
-      <text x="92" y="50" style="font:700 20px Arial,DejaVu Sans,sans-serif;fill:#85e6ff">Q1.15</text>
-      <text x="92" y="79" style="font:700 20px Arial,DejaVu Sans,sans-serif;fill:#b59cff">sat / round</text>
-      <text x="238" y="42" class="stage">Fixed-point design</text>
-      <text x="238" y="75" class="body">Q-format, rounding, saturation</text>
-      <text x="238" y="101" class="metric">Output: numerical error budget</text>
+    <g transform="translate(0 205)">
+      <rect class="card" width="468" height="132" rx="22"/>
+      <circle class="numCircle" cx="48" cy="43" r="24"/><text class="num" x="48" y="43">04</text>
+      <text x="92" y="56" style="font:700 20px Arial,DejaVu Sans,sans-serif;fill:#85e6ff">Q1.15</text>
+      <text x="92" y="86" style="font:700 20px Arial,DejaVu Sans,sans-serif;fill:#b59cff">sat / round</text>
+      <text x="224" y="43" class="stage">Fixed-point</text>
+      <text x="224" y="75" class="body">Q-format and scaling</text>
+      <text x="224" y="101" class="body">rounding and saturation</text>
+      <text x="224" y="123" class="metric">output: error budget</text>
     </g>
 
-    <path class="line" d="M228 318 V358"/>
+    <path class="line" d="M234 352 V390"/>
 
-    <g transform="translate(0 376)">
-      <rect class="card" width="456" height="118" rx="22"/>
-      <circle class="numCircle" cx="48" cy="40" r="24"/><text class="num" x="48" y="40">05</text>
-      <rect x="102" y="31" width="74" height="56" rx="8" fill="#143c5f" stroke="#85e6ff" stroke-width="3"/>
-      <path class="icon" d="M84 42H102M84 56H102M84 70H102M176 42H194M176 56H194M176 70H194"/>
-      <text x="238" y="42" class="stage">Verilog / FPGA architecture</text>
-      <text x="238" y="75" class="body">streaming RTL and testbenches</text>
-      <text x="238" y="101" class="metric">Output: hardware-ready blocks</text>
+    <g transform="translate(0 410)">
+      <rect class="card" width="468" height="132" rx="22"/>
+      <circle class="numCircle" cx="48" cy="43" r="24"/><text class="num" x="48" y="43">05</text>
+      <rect x="104" y="37" width="76" height="58" rx="8" fill="#143c5f" stroke="#85e6ff" stroke-width="3"/>
+      <path class="icon" d="M86 48H104M86 64H104M86 80H104M180 48H198M180 64H198M180 80H198"/>
+      <text x="224" y="43" class="stage">Verilog / FPGA</text>
+      <text x="224" y="75" class="body">streaming RTL blocks</text>
+      <text x="224" y="101" class="body">latency and testbenches</text>
+      <text x="224" y="123" class="metric">output: hardware-ready design</text>
     </g>
 
-    <path class="line" d="M470 435 H585"/>
+    <path class="line" d="M482 476 H575"/>
 
-    <g transform="translate(600 376)">
-      <rect class="card" width="456" height="118" rx="22"/>
-      <circle class="numCircle" cx="48" cy="40" r="24"/><text class="num" x="48" y="40">06</text>
-      <rect x="96" y="31" width="106" height="62" rx="10" fill="#143c5f" stroke="#85e6ff" stroke-width="3"/>
-      <path class="icon2" d="M108 64 C123 37 138 91 153 64 S184 37 198 64"/>
-      <text x="238" y="42" class="stage">Measurement and verification</text>
-      <text x="238" y="75" class="body">model vs software vs RTL vs signal</text>
-      <text x="238" y="101" class="metric">Output: trusted experiment report</text>
+    <g transform="translate(590 410)">
+      <rect class="card" width="468" height="132" rx="22"/>
+      <circle class="numCircle" cx="48" cy="43" r="24"/><text class="num" x="48" y="43">06</text>
+      <rect x="96" y="38" width="106" height="62" rx="10" fill="#143c5f" stroke="#85e6ff" stroke-width="3"/>
+      <path class="icon2" d="M108 71 C123 44 138 98 153 71 S184 44 198 71"/>
+      <text x="224" y="43" class="stage">Measurement</text>
+      <text x="224" y="75" class="body">model vs C++ vs RTL</text>
+      <text x="224" y="101" class="body">synthetic and real signals</text>
+      <text x="224" y="123" class="metric">output: trusted report</text>
     </g>
 
-    <path class="line" d="M828 506 V546"/>
+    <path class="line" d="M824 557 V596"/>
 
-    <g transform="translate(300 564)">
-      <rect class="cardAlt" width="456" height="126" rx="22"/>
-      <circle class="numCircle" cx="48" cy="42" r="24"/><text class="num" x="48" y="42">07</text>
-      <path class="icon" d="M96 67H202M149 26V102"/>
-      <circle cx="124" cy="48" r="5" fill="#85e6ff"/><circle cx="176" cy="48" r="5" fill="#85e6ff"/><circle cx="124" cy="86" r="5" fill="#b59cff"/><circle cx="176" cy="86" r="5" fill="#b59cff"/>
-      <text x="238" y="44" class="stage">BER / EVM / SNR reports</text>
-      <text x="238" y="78" class="body">metrics, limitations, conclusions</text>
-      <text x="238" y="106" class="metric">Output: publication-ready artifacts</text>
+    <g transform="translate(295 616)">
+      <rect class="cardAlt" width="468" height="142" rx="22"/>
+      <circle class="numCircle" cx="48" cy="46" r="24"/><text class="num" x="48" y="46">07</text>
+      <path class="icon" d="M96 76H202M149 34V112"/>
+      <circle cx="124" cy="56" r="5" fill="#85e6ff"/><circle cx="176" cy="56" r="5" fill="#85e6ff"/><circle cx="124" cy="96" r="5" fill="#b59cff"/><circle cx="176" cy="96" r="5" fill="#b59cff"/>
+      <text x="224" y="45" class="stage">BER / EVM / SNR</text>
+      <text x="224" y="78" class="body">metrics and limitations</text>
+      <text x="224" y="104" class="body">engineering conclusions</text>
+      <text x="224" y="128" class="metric">output: publication artifacts</text>
     </g>
 
-    <path class="feedback" d="M528 704 V746 H98 V520"/>
-    <text x="115" y="774" class="small">Feedback loop: real measurements refine the model, implementation and error budget.</text>
+    <path class="feedback" d="M529 778 V820 H92 V557"/>
+    <text x="112" y="852" class="small">Feedback loop: measurements refine the model, implementation and error budget.</text>
   </g>
 
-  <text x="70" y="862" class="footerStrong">Core idea:</text>
-  <text x="188" y="862" class="footer">keep algorithms, software, hardware and metrics aligned through reproducible evidence.</text>
+  <text x="70" y="972" class="footerStrong">Core idea:</text>
+  <text x="188" y="972" class="footer">algorithms, software, hardware and metrics stay aligned through reproducible evidence.</text>
 </svg>
