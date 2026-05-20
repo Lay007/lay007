@@ -39,8 +39,8 @@
       .mini2{stroke:#b59cff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;fill:none}
       .dot{fill:#86e6ff}
       .dot2{fill:#b59cff}
-      .qtxt{font:800 14px Arial,DejaVu Sans,sans-serif;fill:#b59cff;text-anchor:middle;dominant-baseline:middle}
-      .code{font:800 20px Arial,DejaVu Sans,sans-serif;fill:#86e6ff;text-anchor:middle;dominant-baseline:middle}
+      .qtxt{font:800 13px Arial,DejaVu Sans,sans-serif;fill:#b59cff;text-anchor:middle;dominant-baseline:middle}
+      .code{font:800 15px Arial,DejaVu Sans,sans-serif;fill:#86e6ff;text-anchor:middle;dominant-baseline:middle}
     </style>
   </defs>
 
@@ -58,8 +58,8 @@
     <g>
       <rect class="card" width="240" height="86" rx="18"/>
       <circle class="badge" cx="31" cy="0" r="16"/><text class="num" x="31" y="0">01</text>
-      <circle class="badge" cx="206" cy="0" r="18" fill-opacity="0.35"/>
-      <path class="mini" d="M191 0 C197 -10 203 10 209 0 S221 -10 227 0"/>
+      <circle class="badge" cx="206" cy="0" r="27" fill-opacity="0.35"/>
+      <path class="mini" d="M185 0 C192 -13 199 13 206 0 S220 -13 227 0"/>
       <text x="120" y="43" class="stage">Signal / RF</text>
       <text x="120" y="70" class="hint">problem definition</text>
     </g>
@@ -67,8 +67,8 @@
     <g transform="translate(272 0)">
       <rect class="card" width="240" height="86" rx="18"/>
       <circle class="badge" cx="31" cy="0" r="16"/><text class="num" x="31" y="0">02</text>
-      <circle class="badge2" cx="206" cy="0" r="18" fill-opacity="0.35"/>
-      <path class="mini" d="M190 10H225M190 10V-10"/><path class="mini2" d="M194 6 L202 -1 L211 3 L219 -7 L226 -10"/>
+      <circle class="badge2" cx="206" cy="0" r="27" fill-opacity="0.35"/>
+      <path class="mini" d="M188 14H226M188 14V-15"/><path class="mini2" d="M192 8 L201 -1 L211 3 L220 -10 L226 -14"/>
       <text x="120" y="43" class="stage">MATLAB</text>
       <text x="120" y="70" class="hint">golden reference</text>
     </g>
@@ -76,9 +76,9 @@
     <g transform="translate(544 0)">
       <rect class="card" width="240" height="86" rx="18"/>
       <circle class="badge" cx="31" cy="0" r="16"/><text class="num" x="31" y="0">03</text>
-      <circle class="badge" cx="206" cy="0" r="18" fill-opacity="0.35"/>
-      <text class="code" x="200" y="0">{ }</text>
-      <circle class="mini" cx="226" cy="0" r="7"/>
+      <circle class="badge" cx="206" cy="0" r="27" fill-opacity="0.35"/>
+      <text class="code" x="206" y="-3">&lt;/&gt;</text>
+      <path class="mini" d="M190 12H222"/>
       <text x="120" y="43" class="stage">C++ DSP</text>
       <text x="120" y="70" class="hint">tests and benchmarks</text>
     </g>
@@ -86,9 +86,9 @@
     <g transform="translate(816 0)">
       <rect class="card" width="240" height="86" rx="18"/>
       <circle class="badge" cx="31" cy="0" r="16"/><text class="num" x="31" y="0">04</text>
-      <circle class="badge2" cx="206" cy="0" r="18" fill-opacity="0.35"/>
-      <text class="qtxt" x="206" y="0">Q</text>
-      <path class="mini" d="M225 -9V9"/>
+      <circle class="badge2" cx="206" cy="0" r="27" fill-opacity="0.35"/>
+      <text class="qtxt" x="206" y="-7">Qm.n</text>
+      <path class="mini" d="M187 13H197V5H207V-3H217V-12H226"/>
       <text x="120" y="43" class="stage">Fixed-point</text>
       <text x="120" y="70" class="hint">error budget</text>
     </g>
@@ -104,9 +104,9 @@
     <g>
       <rect class="card" width="240" height="86" rx="18"/>
       <circle class="badge" cx="31" cy="0" r="16"/><text class="num" x="31" y="0">05</text>
-      <circle class="badge" cx="206" cy="0" r="18" fill-opacity="0.35"/>
-      <rect x="192" y="-11" width="26" height="22" rx="4" fill="#12395a" stroke="#86e6ff" stroke-width="2"/>
-      <path class="mini" d="M185 -6H192M185 0H192M185 6H192M218 -6H225M218 0H225M218 6H225"/>
+      <circle class="badge" cx="206" cy="0" r="27" fill-opacity="0.35"/>
+      <rect x="190" y="-14" width="32" height="28" rx="5" fill="#12395a" stroke="#86e6ff" stroke-width="2"/>
+      <path class="mini" d="M181 -8H190M181 0H190M181 8H190M222 -8H231M222 0H231M222 8H231"/>
       <text x="120" y="43" class="stage">Verilog / FPGA</text>
       <text x="120" y="70" class="hint">streaming RTL</text>
     </g>
@@ -114,9 +114,9 @@
     <g transform="translate(272 0)">
       <rect class="card" width="240" height="86" rx="18"/>
       <circle class="badge" cx="31" cy="0" r="16"/><text class="num" x="31" y="0">06</text>
-      <circle class="badge2" cx="206" cy="0" r="18" fill-opacity="0.35"/>
-      <rect x="184" y="-12" width="44" height="25" rx="5" fill="#12395a" stroke="#86e6ff" stroke-width="2"/>
-      <path class="mini2" d="M188 3 C195 -11 202 14 209 3 S223 -11 228 3"/>
+      <circle class="badge2" cx="206" cy="0" r="27" fill-opacity="0.35"/>
+      <rect x="180" y="-16" width="52" height="32" rx="6" fill="#12395a" stroke="#86e6ff" stroke-width="2"/>
+      <path class="mini2" d="M185 4 C193 -14 201 16 209 4 S226 -14 231 4"/>
       <text x="120" y="43" class="stage">Verification</text>
       <text x="120" y="70" class="hint">model / C++ / RTL</text>
     </g>
@@ -124,10 +124,10 @@
     <g transform="translate(544 0)">
       <rect class="final" width="240" height="86" rx="18"/>
       <circle class="badge" cx="31" cy="0" r="16"/><text class="num" x="31" y="0">07</text>
-      <circle class="badge2" cx="206" cy="0" r="18" fill-opacity="0.35"/>
-      <path class="mini" d="M188 0H224M206 -15V15"/>
-      <circle class="dot" cx="197" cy="-8" r="3"/><circle class="dot" cx="215" cy="-8" r="3"/>
-      <circle class="dot2" cx="197" cy="9" r="3"/><circle class="dot2" cx="215" cy="9" r="3"/>
+      <circle class="badge2" cx="206" cy="0" r="27" fill-opacity="0.35"/>
+      <path class="mini" d="M184 0H228M206 -19V19"/>
+      <circle class="dot" cx="195" cy="-10" r="3.3"/><circle class="dot" cx="217" cy="-10" r="3.3"/>
+      <circle class="dot2" cx="195" cy="11" r="3.3"/><circle class="dot2" cx="217" cy="11" r="3.3"/>
       <text x="120" y="43" class="stage">Metrics</text>
       <text x="120" y="70" class="hint">BER / EVM / SNR</text>
     </g>
