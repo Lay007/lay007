@@ -8,6 +8,18 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 
 ---
 
+## 60-second reviewer snapshot
+
+| Signal I want to show | Evidence in the portfolio |
+|---|---|
+| **I can connect theory to hardware** | SDR course path from signal theory to Zynq/AD9363 experiments and RTL flow |
+| **I can implement DSP, not only describe it** | C++ DSP kernels with tests, benchmark tooling, and generated reports |
+| **I can verify engineering systems** | MATLAB/C++/RTL alignment, deterministic vectors, CI checks, and metric-driven validation |
+| **I can work with real measurements** | BER, EVM, SNR, jitter, latency, timestamp accuracy, and error-budget reporting |
+| **I can turn R&D into documentation** | MkDocs sites, IEEE-style figures, experiment manifests, and publication-oriented reports |
+
+---
+
 ## Engineering Pipeline
 
 ![Engineering Pipeline](assets/engineering_pipeline.svg)
@@ -15,7 +27,7 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 | Stage | Engineering result |
 |---|---|
 | **Signal / RF problem** | define channel, impairments, constraints, and measurable goals |
-| **MATLAB / Simulink model** | build readable golden reference and diagnostic plots |
+| **MATLAB / Simulink model** | build readable golden reference, diagnostic plots, and test vectors |
 | **C++ implementation** | create deterministic, testable, reproducible software processing |
 | **Fixed-point design** | define Q-format, rounding, saturation, and error budget |
 | **Verilog / FPGA architecture** | map stable DSP blocks to streaming RTL and testbenches |
@@ -33,27 +45,12 @@ Additional portfolio structure notes are available in [docs/engineering-portfoli
 | Experiment manifests + CI checks | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | reproducible SDR labs and acceptance criteria |
 | DSP test-vector strategy + benchmark schema | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | deterministic C++ DSP validation and performance reporting |
 | SLA dashboard + timestamp comparison manifest | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | measurement credibility and hardware/software timestamp analysis |
-| CDC comparison flow + paper outline | [optical-demodulator](https://github.com/Lay007/optical-demodulator) | IEEE-style optical DSP research workflow |
+| CDC comparison flow + paper outline | private research workspace | IEEE-style optical DSP research workflow |
 | MkDocs course site + generated figures | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | documentation automation and course UX |
 
 ---
 
-## What I Do Best
-
-- Design DSP chains for communication and measurement systems.
-- Convert algorithms into hardware-aware C++ and Verilog implementations.
-- Build verification flows across MATLAB, C++, RTL simulation, and real signals.
-- Analyze receiver quality using BER, EVM, SNR, jitter, latency, and error-budget metrics.
-- Document engineering systems so that results are reproducible, reviewable, and useful.
-
----
-
 ## Featured Engineering Projects
-
-### [optical-demodulator](https://github.com/Lay007/optical-demodulator)
-Research-oriented coherent optical demodulation workspace with MATLAB, C++, and Verilog layers.
-
-**Focus:** chromatic-dispersion compensation, DP-QPSK processing, CDC comparison reports, BER/EVM/SNR metrics, fixed-point and RTL mapping.
 
 ### [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course)
 Bilingual SDR course connecting signal theory, DSP, fixed-point modeling, HDL flow, RF front-end understanding, and board-level experiments.
@@ -70,6 +67,11 @@ Hardware-assisted network measurement concept based on FPGA/SFP datapath timesta
 
 **Focus:** one-way delay, jitter, packet loss, timestamp accuracy, timing error budget, SLA reports, software vs hardware timestamps.
 
+### optical-demodulator *(private research workspace)*
+Research-oriented coherent optical demodulation workspace with MATLAB, C++, and Verilog layers.
+
+**Focus:** chromatic-dispersion compensation, DP-QPSK processing, CDC comparison reports, BER/EVM/SNR metrics, fixed-point and RTL mapping.
+
 ### [script-toolbox](https://github.com/Lay007/script-toolbox)
 Practical automation toolbox for repeatable Windows engineering workstation setup.
 
@@ -77,6 +79,16 @@ Practical automation toolbox for repeatable Windows engineering workstation setu
 
 ### [lay007.github.io](https://github.com/Lay007/lay007.github.io)
 Personal engineering website and portfolio landing page.
+
+---
+
+## What I Do Best
+
+- Design DSP chains for communication and measurement systems.
+- Convert algorithms into hardware-aware C++ and Verilog implementations.
+- Build verification flows across MATLAB, C++, RTL simulation, and real signals.
+- Analyze receiver quality using BER, EVM, SNR, jitter, latency, and error-budget metrics.
+- Document engineering systems so that results are reproducible, reviewable, and useful.
 
 ---
 
