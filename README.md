@@ -22,6 +22,30 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 
 ---
 
+## Best evidence to review first
+
+| Start here | What it proves |
+|---|---|
+| [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | End-to-end SDR education and engineering workflow from DSP model to FPGA/RF measurement |
+| [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | Modern C++ DSP kernels with tests, benchmarks, CMake packaging and reproducible reports |
+| [optical-demodulator](https://github.com/Lay007/optical-demodulator) | Coherent optical DSP research path with CDC, BER/EVM/SNR methodology and IEEE-style artifacts |
+| [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | Measurement credibility for latency, jitter, packet loss and timestamp-analysis workflows |
+| [script-toolbox](https://github.com/Lay007/script-toolbox) | Repeatable Windows/SSH/Git/developer-machine setup automation with quality gates |
+
+---
+
+## What I can deliver
+
+| Area | Deliverable |
+|---|---|
+| DSP algorithms | reference model, plots, metrics, fixed-point notes and test vectors |
+| FPGA / RTL | streaming architecture, Verilog modules, testbenches, resource/timing reports |
+| SDR systems | signal chain design, capture workflow, IQ metadata, RF measurement report |
+| C++ DSP | reusable library code, CMake packaging, unit tests, benchmark report |
+| Engineering documentation | reviewer path, acceptance checklist, experiment manifests and publication-ready figures |
+
+---
+
 ## Engineering Pipeline
 
 ![Engineering Pipeline](assets/engineering_pipeline.svg)
@@ -46,6 +70,7 @@ Additional portfolio structure notes are available in [docs/engineering-portfoli
 |---|---|---|
 | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | SDR course, Zynq/AD9363, HDL, RF measurements | End-to-end path from signal theory to FPGA/RF experiments |
 | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | Modern C++ DSP kernels | Tests, benchmarks, CMake packaging and reproducible DSP evidence |
+| [optical-demodulator](https://github.com/Lay007/optical-demodulator) | Coherent optical DSP | CDC comparison, BER/EVM/SNR methodology, MATLAB/C++/RTL migration path |
 | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | Network latency/jitter methodology | Measurement credibility, trace schema and timestamp-analysis workflow |
 | [script-toolbox](https://github.com/Lay007/script-toolbox) | Windows/SSH/Git setup automation | Repeatable workstation and build-host setup with safety checks |
 
@@ -58,8 +83,8 @@ Additional portfolio structure notes are available in [docs/engineering-portfoli
 | Experiment manifests + CI checks | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | reproducible SDR labs and acceptance criteria |
 | DSP test-vector strategy + benchmark schema | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | deterministic C++ DSP validation and performance reporting |
 | Synthetic SLA demo + timestamp methodology | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | measurement credibility, trace schema and hardware/software timestamp analysis |
-| CDC comparison flow + IEEE experiment plan | coherent optical DSP research workspace | MATLAB/C++/RTL validation, CDC, BER/EVM/SNR methodology |
-| PowerShell CI + security policy | [script-toolbox](https://github.com/Lay007/script-toolbox) | repeatable engineering workstation automation with safety checks |
+| CDC comparison flow + IEEE experiment plan | [optical-demodulator](https://github.com/Lay007/optical-demodulator) | MATLAB/C++/RTL validation, CDC, BER/EVM/SNR methodology |
+| PowerShell CI + safety policy | [script-toolbox](https://github.com/Lay007/script-toolbox) | repeatable engineering workstation automation with reviewable checks |
 
 ---
 
