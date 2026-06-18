@@ -46,6 +46,17 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 
 ---
 
+## Mini case studies
+
+| Case | Problem | Engineering approach | Evidence |
+|---|---|---|---|
+| SDR education pipeline | Beginners often know DSP, FPGA and RF as separate fragments | Built a course route from signal theory to fixed-point, HDL, Zynq/AD9363, IQ data and reports | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) |
+| C++ DSP validation | DSP code is easy to demonstrate but hard to trust without tests and metrics | Created small deterministic DSP kernels with CMake, tests, benchmarks and package export | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) |
+| Optical receiver research | Coherent optical DSP needs traceable metrics before publication | Organized MATLAB/C++/RTL-oriented workspace with BER/EVM/SNR methodology and paper assets | [optical-demodulator](https://github.com/Lay007/optical-demodulator) |
+| Measurement credibility | Network delay/jitter results are often polluted by host-side uncertainty | Built a trace/report workflow focused on timestamping, SLA metrics and synthetic-vs-real validation | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) |
+
+---
+
 ## Engineering Pipeline
 
 ![Engineering Pipeline](assets/engineering_pipeline.svg)
