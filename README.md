@@ -22,15 +22,31 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 
 ---
 
+## 10-minute portfolio review path
+
+| Step | Open | What to check |
+|---:|---|---|
+| 1 | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | End-to-end route from DSP model to HDL, Zynq/AD9363 and measurement reports |
+| 2 | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | C++ DSP kernels, tests, benchmarks and CMake packaging |
+| 3 | [optical-demodulator](https://github.com/Lay007/optical-demodulator) | Coherent optical DSP, CDC comparison, BER/EVM/SNR methodology and paper assets |
+| 4 | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | SLA traces, timestamp credibility and synthetic reporting demo |
+| 5 | [script-toolbox](https://github.com/Lay007/script-toolbox) | Repeatable Windows/SSH/Git automation and PowerShell quality gates |
+
+Use this path when you want a fast technical review instead of a complete repository-by-repository audit.
+
+---
+
 ## Best evidence to review first
 
-| Start here | What it proves |
-|---|---|
-| [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | End-to-end SDR education and engineering workflow from DSP model to FPGA/RF measurement |
-| [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | Modern C++ DSP kernels with tests, benchmarks, CMake packaging and reproducible reports |
-| [optical-demodulator](https://github.com/Lay007/optical-demodulator) | Coherent optical DSP research path with CDC, BER/EVM/SNR methodology and IEEE-style artifacts |
-| [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | Measurement credibility for latency, jitter, packet loss and timestamp-analysis workflows |
-| [script-toolbox](https://github.com/Lay007/script-toolbox) | Repeatable Windows/SSH/Git/developer-machine setup automation with quality gates |
+| Start here | What it proves | Status |
+|---|---|---|
+| [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | End-to-end SDR education and engineering workflow from DSP model to FPGA/RF measurement | Flagship / active |
+| [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | Modern C++ DSP kernels with tests, benchmarks, CMake packaging and reproducible reports | Active showcase |
+| [optical-demodulator](https://github.com/Lay007/optical-demodulator) | Coherent optical DSP research path with CDC, BER/EVM/SNR methodology and IEEE-style artifacts | Research / active |
+| [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | Measurement credibility for latency, jitter, packet loss and timestamp-analysis workflows | Engineering demo |
+| [cpp-git-cmake-course](https://github.com/Lay007/cpp-git-cmake-course) | Beginner route into Git, C++, CMake and CI before SDR/FPGA work | Teaching track |
+| [LRD257_CODER](https://github.com/Lay007/LRD257_CODER) | MATLAB FEC coding, GF(257), LoRa control-frame adapter and HDL-oriented decomposition | Research utility |
+| [script-toolbox](https://github.com/Lay007/script-toolbox) | Repeatable Windows/SSH/Git/developer-machine setup automation with quality gates | Infrastructure toolkit |
 
 ---
 
