@@ -18,7 +18,7 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 | **I can implement DSP, not only describe it** | C++ DSP kernels with tests, benchmark tooling, and generated reports |
 | **I can verify engineering systems** | MATLAB/C++/RTL alignment, deterministic vectors, CI checks, and metric-driven validation |
 | **I can work with real measurements** | BER, EVM, SNR, jitter, latency, timestamp accuracy, and error-budget reporting |
-| **I can turn R&D into documentation** | MkDocs sites, IEEE-style figures, experiment manifests, and publication-oriented reports |
+| **I can turn R&D into documentation** | MkDocs sites, IEEE-style figures, experiment manifests, reviewer checklists and publication-oriented reports |
 
 ---
 
@@ -107,11 +107,12 @@ Additional portfolio structure notes are available in [docs/engineering-portfoli
 
 | Proof artifact | Repository | What it demonstrates |
 |---|---|---|
-| Experiment manifests + CI checks | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | reproducible SDR labs and acceptance criteria |
-| DSP test-vector strategy + benchmark schema | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | deterministic C++ DSP validation and performance reporting |
-| Synthetic SLA demo + timestamp methodology | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | measurement credibility, trace schema and hardware/software timestamp analysis |
-| CDC comparison flow + IEEE experiment plan | [optical-demodulator](https://github.com/Lay007/optical-demodulator) | MATLAB/C++/RTL validation, CDC, BER/EVM/SNR methodology |
-| PowerShell CI + safety policy | [script-toolbox](https://github.com/Lay007/script-toolbox) | repeatable engineering workstation automation with reviewable checks |
+| Flagship reviewer report + experiment manifests + CI checks | [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course) | reproducible SDR labs, evidence map and acceptance criteria |
+| Reviewer quick check + DSP test-vector strategy + benchmark schema | [cpp-dsp-showcase](https://github.com/Lay007/cpp-dsp-showcase) | deterministic C++ DSP validation and performance reporting |
+| Synthetic SLA demo + reviewer acceptance checklist | [network-quality-assessment](https://github.com/Lay007/network-quality-assessment) | measurement credibility, trace schema and hardware/software timestamp analysis |
+| CDC promotion gates + IEEE experiment plan | [optical-demodulator](https://github.com/Lay007/optical-demodulator) | MATLAB/C++/RTL validation, CDC, BER/EVM/SNR methodology |
+| PowerShell CI + safety policy + script release checklist | [script-toolbox](https://github.com/Lay007/script-toolbox) | repeatable engineering workstation automation with reviewable checks |
+| Engineering acceptance checklist | [LRD257_CODER](https://github.com/Lay007/LRD257_CODER) | MATLAB/Simulink-oriented FEC prototype with clear limits before hardware-ready claims |
 
 ---
 
