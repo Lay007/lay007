@@ -10,11 +10,21 @@ I build reproducible DSP and communication-system pipelines: from MATLAB/Simulin
 
 ---
 
+## Current flagship result
+
+The [`zynq-sdr-course`](https://github.com/Lay007/zynq-sdr-course) now includes a complete in-fabric QPSK modem validated on two independent Zynq-7020 + AD936x boards over a 915 MHz cabled RF link.
+
+- Fabric loopback: 5.6 million bits, zero errors, with a reported BER upper bound below `5.34e-7`.
+- Two-board differential QPSK: whole-burst rotation failures eliminated, payload BER about `4e-4`.
+- Reproducible evidence: RTL regression tests, captured data, machine-readable result JSON, timing/resource reports, and a filled final measurement report.
+
+---
+
 ## 60-second reviewer snapshot
 
 | Signal I want to show | Evidence in the portfolio |
 |---|---|
-| **I can connect theory to hardware** | SDR course path from signal theory to Zynq/AD9363 experiments and RTL flow |
+| **I can connect theory to hardware** | Complete QPSK modem path from DSP model through fixed-point RTL to a measured two-board Zynq/AD936x RF link |
 | **I can implement DSP, not only describe it** | C++ DSP kernels with tests, benchmark tooling, and generated reports |
 | **I can verify engineering systems** | MATLAB/C++/RTL alignment, deterministic vectors, CI checks, and metric-driven validation |
 | **I can work with real measurements** | BER, EVM, SNR, jitter, latency, timestamp accuracy, and error-budget reporting |
