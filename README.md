@@ -23,8 +23,8 @@ An end-to-end SDR engineering course and evidence base. Its in-fabric QPSK modem
 A LoRa PHY and ToA/TDoA positioning platform with a traceable MATLAB → Simulink → generated Verilog → ZynqSDR path.
 
 - Complete MATLAB floating-point M1: continuous-IQ packet acquisition, hard/soft LoRa decoding, BER/PER, fractional ToA, and calibrated 2D TDoA.
-- Streaming fixed-point Simulink front end with blind acquisition, realignment, reset behavior, and stage-by-stage regression against MATLAB.
-- Generated HDL for the correlator, detector, acquisition FSM, and timing/CFO estimator, with out-of-context synthesis evidence.
+- Streaming fixed-point Simulink front end with blind acquisition, grid realignment, SFD/framing, coarse timestamps, and packet-rate fractional ToA regression against MATLAB.
+- Generated HDL for eight hardware-bound blocks, including the packet-rate ToA interpolator and dedicated carrier-frequency estimator; all eight have out-of-context synthesis evidence, while the correlator and ToA block also have post-route timing and vectorless core-power estimates.
 
 ## 10-minute review path
 
