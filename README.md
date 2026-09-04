@@ -4,7 +4,7 @@
 Candidate of Technical Sciences  
 C++ • Verilog • MATLAB/Simulink • Fixed-Point DSP • SDR • Measurement Systems
 
-[LinkedIn](https://ru.linkedin.com/in/alexander-lyubko-dsp) · [Engineering portfolio](https://lay007.github.io)
+[LinkedIn](https://ru.linkedin.com/in/alexander-lyubko-dsp) · [Engineering portfolio](https://lay007.github.io) · [laymob@gmail.com](mailto:laymob@gmail.com)
 
 I build reproducible communication-system pipelines: from MATLAB/Simulink reference models to C++ and RTL implementations, FPGA/SDR integration, measurements, and engineering reports.
 
