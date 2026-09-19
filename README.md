@@ -25,6 +25,8 @@ A LoRa PHY and ToA/TDoA positioning platform with a traceable MATLAB → Simulin
 - Complete MATLAB floating-point M1: continuous-IQ packet acquisition, hard/soft LoRa decoding, BER/PER, fractional ToA, and calibrated 2D TDoA.
 - Streaming fixed-point Simulink front end with blind acquisition, grid realignment, SFD/framing, coarse timestamps, and packet-rate fractional ToA regression against MATLAB.
 - Generated HDL for eight hardware-bound blocks, including the packet-rate ToA interpolator and dedicated carrier-frequency estimator; all eight have out-of-context synthesis evidence, while the correlator and ToA block also have post-route timing and vectorless core-power estimates.
+- September 19 CLG400 reception log: 90 attempts, 84 captures, 81 CRC passes at gain 25 dB; 79/79 at zero grid error. [M5/M6 evidence and limits](https://github.com/Lay007/zynq-lora-phy-positioning/blob/9daeb10/docs/clg400-joint-grid-experiment.md).
+- M6 re-arm/epoch continuity is RTL-tested; its board campaign, calibrated ToA accuracy and synchronized TDoA remain open. The CRC subset is not a PER or positioning-accuracy claim.
 
 ## 10-minute review path
 
