@@ -6,7 +6,16 @@ C++ • Verilog • MATLAB/Simulink • Fixed-Point DSP • SDR • Measurement 
 
 [LinkedIn](https://ru.linkedin.com/in/alexander-lyubko-dsp) · [Engineering portfolio](https://lay007.github.io) · [laymob@gmail.com](mailto:laymob@gmail.com)
 
-I build reproducible communication-system pipelines: from MATLAB/Simulink reference models to C++ and RTL implementations, FPGA/SDR integration, measurements, and engineering reports.
+I help R&D teams turn DSP and communication algorithms into verified C++/RTL/FPGA implementations. My work is evidence-driven: MATLAB/Simulink reference models, deterministic test vectors, fixed-point design, FPGA/SDR integration, measurements, and engineering reports.
+
+## How I can help
+
+- **DSP / FPGA technical diagnostic** — review a signal-processing problem, architecture, model, or implementation and define measurable next steps.
+- **MATLAB / Simulink model audit** — check algorithm behavior, numerical assumptions, test coverage, and implementation risks.
+- **Model-to-implementation work** — move verified DSP algorithms toward C++ or Verilog/FPGA with shared reference vectors and acceptance criteria.
+- **Focused R&D support and mentoring** — part-time technical support for DSP, SDR, fixed-point, FPGA, and communications projects.
+
+For consulting or focused project work, contact me via [email](mailto:laymob@gmail.com) or [LinkedIn](https://ru.linkedin.com/in/alexander-lyubko-dsp).
 
 ## Current flagship work
 
@@ -23,8 +32,9 @@ An end-to-end SDR engineering course and evidence base. Its in-fabric QPSK modem
 A LoRa PHY and ToA/TDoA positioning platform with a traceable MATLAB → Simulink → generated Verilog → ZynqSDR path.
 
 - Complete MATLAB floating-point M1: continuous-IQ packet acquisition, hard/soft LoRa decoding, BER/PER, fractional ToA, and calibrated 2D TDoA.
-- Streaming fixed-point Simulink front end with blind acquisition, grid realignment, SFD/framing, coarse timestamps, and packet-rate fractional ToA regression against MATLAB.
-- Generated HDL for eight hardware-bound blocks, including the packet-rate ToA interpolator and dedicated carrier-frequency estimator; all eight have out-of-context synthesis evidence, while the correlator and ToA block also have post-route timing and vectorless core-power estimates.
+- Streaming fixed-point Simulink front end and generated HDL cover blind acquisition, grid realignment, SFD/framing, timestamp metadata, carrier-frequency estimation, and fractional ToA.
+- Real over-the-air SX1262 packets now decode on ZynqSDR hardware with valid payload CRC. In the latest 500-attempt guard-image campaign, all 492 captured packets passed CRC with zero PL grid errors; the remaining attempts included transmitter-side failures and three detector misses.
+- A continuous PL sample-time counter was verified across 47 captures spanning 803.7 s. Controlled delay calibration and synchronized multi-receiver TDoA remain open research milestones.
 
 ## 10-minute review path
 
