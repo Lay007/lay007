@@ -17,6 +17,8 @@ I help R&D teams turn DSP and communication algorithms into verified C++/RTL/FPG
 
 For consulting or focused project work, contact me via [email](mailto:laymob@gmail.com) or [LinkedIn](https://ru.linkedin.com/in/alexander-lyubko-dsp).
 
+For a client-oriented view of the work, see the three short [engineering case studies](https://lay007.github.io/case-studies.html): QPSK/Zynq, LoRa/ToA, and C++ DSP.
+
 ## Current flagship work
 
 ### [zynq-sdr-course](https://github.com/Lay007/zynq-sdr-course)
