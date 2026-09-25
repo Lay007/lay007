@@ -1,0 +1,49 @@
+name: Profile checks
+
+on:
+  push:
+    paths:
+      - "README.md"
+      - "assets/**"
+      - "docs/**"
+      - "tools/**"
+      - ".github/workflows/profile-check.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "assets/**"
+      - "docs/**"
+      - "tools/**"
+      - ".github/workflows/profile-check.yml"
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  profile:
+    name: Validate profile
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Validate README and local assets
+        run: python tools/check_profile.py
+
+      - name: Check external links
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python tools/check_profile.py --check-external
