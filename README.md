@@ -12,7 +12,7 @@ I help R&D teams turn DSP and communication algorithms into verified C++/RTL/FPG
 
 - **Zynq/AD936x QPSK:** 5.6 million fabric-loopback bits with zero errors; reported BER upper bound below `5.34e-7`.
 - **Two-board RF link:** differential QPSK over a 915 MHz cabled link with whole-burst rotation failures eliminated and payload BER around `4e-4`.
-- **LoRa/SX1262 → ZynqSDR:** 492/492 captured packets passed payload CRC in the latest 500-attempt guard-image campaign, with zero PL grid errors.
+- **LoRa/SX1262 → ZynqSDR (M9):** 732/732 captured packets passed payload CRC across the 500-attempt and overnight hardware campaigns, with zero detection misses.
 - **FPGA timing:** a continuous PL sample-time counter was verified across 47 captures spanning 803.7 s.
 - **Traceable implementation flow:** MATLAB/Simulink reference models → fixed-point design → generated/manual RTL → Zynq/AD936x → RF/IQ measurements.
 
@@ -36,9 +36,9 @@ The in-fabric QPSK modem is validated on two independent boards over a controlle
 
 A LoRa PHY and ToA/TDoA positioning research platform with a traceable MATLAB → Simulink → generated Verilog → ZynqSDR path.
 
-The current implementation includes continuous-IQ acquisition, LoRa decoding, BER/PER evaluation, fractional ToA, fixed-point streaming processing, generated HDL, hardware packet reception, and PL timestamp metadata. Real over-the-air Heltec V4.3/SX1262 packets decode on ZynqSDR with valid payload CRC.
+The current implementation includes continuous-IQ acquisition, LoRa decoding, BER/PER evaluation, fractional ToA, fixed-point streaming processing, generated HDL, hardware packet reception, and PL timestamp metadata. M9 adds fractional-CFO derotation before the bin decision plus split-preamble recovery; on hardware, the 500-attempt series produced 492/492 CRC-valid captures with zero misses, and the combined series500 + overnight evidence reached 732/732 CRC-valid packets with zero misses.
 
-The next research milestones are controlled delay calibration and synchronized multi-receiver TDoA; the repository does not yet claim a complete synchronized positioning system.
+The next research milestones are controlled delay calibration, inter-receiver synchronization and synchronized multi-receiver TDoA; the repository does not yet claim calibrated hardware positioning.
 
 ## Start here
 
